@@ -21,4 +21,6 @@ public class Square extends Shape{
         super("Square");
         setSide(side);
     }
+
+
 }
