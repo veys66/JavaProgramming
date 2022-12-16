@@ -30,8 +30,12 @@ public class Shape {
         return 0;
     }
 
+    public double perimeter(){
+        return 0;
+    }
 
-
-
-
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
