@@ -30,7 +30,7 @@ public class Car {
 
     }
     fly() is not common for all the cars, and parent class should only contain the common feature of all the sub classes
-
+  v
     */
 
     public String toString() {
