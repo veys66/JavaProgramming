@@ -30,6 +30,16 @@ public class Student extends Person{
     public void study(){
         System.out.println(getName()+" is studying");
     }
+
+    public String toString() {
+        return "Student{" +
+                "name='" + getName() + '\'' +
+                ", age=" + getAge() +
+                ", gender=" + getGender() +
+                "studentId=" + studentId +
+                ", fieldOfStudy='" + fieldOfStudy + '\'' +
+                '}';
+    }
 }
 /*
 6. Create a sub class of Person named Student
