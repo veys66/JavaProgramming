@@ -34,7 +34,7 @@ public class Shape {
         return 0;
     }
 
-    @Override
+
     public String toString() {
         return "Shape{" +
                 "name='" + name + '\'' +
