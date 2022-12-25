@@ -27,13 +27,15 @@ public class TryCatchBlocks {
 
             System.out.println("Try Block");
 
-        }catch (NullPointerException e){
+        }catch (RuntimeException e){
 
             System.out.println("Catch Block");
 
-            System.out.println("Null Pointer exception was occurred");
+            System.out.println("Run time exception was occurred");
         }
         System.out.println("Test2 Completed");
+
+
 
     }
 }
