@@ -2,6 +2,9 @@ package day41_Exceptions;
 
 import day39_Recap.cydeoTask.Student;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 public class Checked_vs_Unchecked {
 
 
@@ -45,7 +48,11 @@ public class Checked_vs_Unchecked {
 
         System.out.println("Cydeo");
 
-        //FileInputStream file= new FileInputStream("path of the file");
+        try {
+            FileInputStream file= new FileInputStream("File path");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         System.out.println("Java".charAt(1000));//unchecked
 
@@ -56,4 +63,5 @@ public class Checked_vs_Unchecked {
 
 
     }
+
 }
