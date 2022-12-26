@@ -39,6 +39,7 @@ public class DisadvantageOfThrowsKeyword2 {
     }
 
     public static void method4() throws Exception {
+
         method3();
     }
 
