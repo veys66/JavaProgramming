@@ -25,7 +25,7 @@ public class MorningWorkOut {
         for (int i = 1; i < 30; i++) {
             System.out.println("\rPull up "+ i);
             try {
-                Thread.sleep(1500);
+                Thread.sleep(2500);
             }catch (InterruptedException e){
                 e.printStackTrace();
             }
