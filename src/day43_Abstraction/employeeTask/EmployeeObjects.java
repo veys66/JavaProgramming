@@ -21,6 +21,16 @@ public class EmployeeObjects {
         tester.bugReport();
         tester.eat();
 
+        System.out.println("-------------------------------------------------");
+
+        developer.work();
+        developer.sleep();
+        //developer.bugReport();
+        developer.eat();
+        developer.unitTest();
+
+
+
 
     }
 }
