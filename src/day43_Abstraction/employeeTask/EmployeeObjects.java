@@ -29,6 +29,11 @@ public class EmployeeObjects {
         developer.eat();
         developer.unitTest();
 
+        System.out.println("-------------------------------------------------");
+
+        teacher.work();
+        teacher.sleep();
+        teacher.eat();
 
 
 
