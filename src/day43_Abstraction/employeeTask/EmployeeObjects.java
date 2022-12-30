@@ -11,13 +11,15 @@ public class EmployeeObjects {
         Teacher teacher= new Teacher("Angel", 28, 'F', 22, "English Teacher", 85000);
         Driver driver= new Driver("Jhon", 34, 'M', 42, "Lyft Driver", 75000);
 
-        System.out.println();
+        System.out.println(tester);
+        System.out.println(developer);
+        System.out.println(teacher);
+        System.out.println(driver);
 
-
-
-
-
-
+        tester.work();
+        tester.sleep();
+        tester.bugReport();
+        tester.eat();
 
 
     }
