@@ -18,9 +18,6 @@ public class Animal {
     public Animal(String name, String breed, char gender, int age, String size, String color) {
         setName(name);
         this.breed = breed;
-        if(!(gender=='M' || gender=='F')){
-            throw new RuntimeException("Invalid gender: "+gender);
-        }
         this.gender = gender;
         setAge(age);
         setSize(size);
@@ -65,6 +62,11 @@ public class Animal {
     public String getColor() {
         return color;
     }
+
+    public final void drink(){
+        System.out.println(name+" is drinking");
+    }
+
 
 
 
