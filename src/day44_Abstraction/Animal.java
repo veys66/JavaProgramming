@@ -1,6 +1,6 @@
 package day44_Abstraction;
 
-public class Animal {
+public abstract class Animal {
 
     private String name;
     private final String breed;
@@ -67,11 +67,18 @@ public class Animal {
         System.out.println(name+" is drinking");
     }
 
-    public void eat(){}
+    public abstract void eat();
 
-
-
-
+    public String toString() {
+        return getClass().getSimpleName()+"{" +
+                "name='" + name + '\'' +
+                ", breed='" + breed + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                ", size='" + size + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
 /*
 Animal Task:
@@ -81,7 +88,7 @@ name, breed(final), gender(final), age, size, color(final)
 
 Encapsulate all the fields
 
-Add a cosntructor that can set all the fields
+Add a constructor that can set all the fields
 
 Methods:
 eat(); ==> different animals eat
