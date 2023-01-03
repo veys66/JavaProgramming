@@ -67,6 +67,8 @@ public class Animal {
         System.out.println(name+" is drinking");
     }
 
+    public void eat(){}
+
 
 
 
