@@ -30,9 +30,9 @@ interface Y extends X, Z {
 
 //implements
 
-class D implements X,Y,Z
-{
+class D implements X,Y,Z {
 
 }
-public class Extends_vs_Implements {
+
+public class Extends_vs_Implements extends A implements X, Y, Z{
 }
