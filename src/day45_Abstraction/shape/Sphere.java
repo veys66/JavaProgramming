@@ -1,8 +1,8 @@
 package day45_Abstraction.shape;
 
-public class Cube extends Shape{
+public class Sphere extends Shape{
 
-    public Cube(String name) {
+    public Sphere(String name) {
         super(name);
     }
 
