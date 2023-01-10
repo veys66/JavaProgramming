@@ -1,8 +1,11 @@
 package day46_Polymorphism;
 
+import day40_FinalKeyword.Animal;
+import day40_FinalKeyword.Cat;
+import day40_FinalKeyword.Dog;
 import day43_Abstraction.employeeTask.*;
-import day45_Abstraction.shape.Circle;
-import day45_Abstraction.shape.Square;
+import day44_Abstraction.animalTask.Playable;
+import day45_Abstraction.shape.*;
 
 import java.util.ArrayList;
 
@@ -35,10 +38,50 @@ public class PolymorphismIntro {
 
         System.out.println("---------------------------------------------------------------------------------------------------------");
 
+        Employee employee= new Tester("Ali", 30, 'M', 42, "SDET", 14500);
+        employee.work();
+        //employee.bugReport();
 
 
+        Animal animal= new Dog("Max", "Husky", 'M', "White", "Small", 3);
+        animal.drink();
+        animal.eat();
+        //animal.play();
+        //animal.bark();
+
+      Playable animal2= new Dog("Max", "Husky", 'M', "White", "Small", 3);
+        System.out.println(animal2.isFriendly);
+        animal2.play();
+        //animal.drink();
+        //animal2.eat();
+
+        Animal animal3= new Cat("Max", "Husky", 'M', "white", "Small", 3);
+
+        Shape shape= new Circle("Circle", 5);
+        shape.area();
+
+        //System.out.println(shape.getRadius());
+        //System.out.println(shape.PI);
+
+        boolean isSquare=shape instanceof Square;
+        boolean isRectangle= shape instanceof Rectangle;
+        boolean isTriangle= shape instanceof Triangle;
+        boolean isCircle= shape instanceof Circle;
+
+        System.out.println("isSquare = " + isSquare);
+        System.out.println("isRectangle = " + isRectangle);
+        System.out.println("isTriangle = " + isTriangle);
+        System.out.println("isCircle = " + isCircle);
 
 
-
+        /*
+        WebDriver driver:
+           if (river instance Chrome ){
+           Chrome browser will open
+           }else if(driver instanceof firefox){
+           Firefox browser will open
+           }
+           ...
+         */
     }
 }
