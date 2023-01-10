@@ -1,6 +1,8 @@
 package day40_FinalKeyword;
 
-public class Dog extends Animal{
+import day44_Abstraction.animalTask.Playable;
+
+public class Dog extends Animal implements Playable {
 
 
     public Dog(String name, String breed, char gender, String color, String size, int age) {
@@ -22,5 +24,8 @@ public class Dog extends Animal{
     }
 
 
+    @Override
+    public void play() {
 
+    }
 }
