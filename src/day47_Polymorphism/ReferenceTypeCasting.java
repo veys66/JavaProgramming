@@ -3,7 +3,9 @@ package day47_Polymorphism;
 import day40_FinalKeyword.Animal;
 import day40_FinalKeyword.Cat;
 import day40_FinalKeyword.Dog;
-import day43_Abstraction.employeeTask.*;
+import day43_Abstraction.employeeTask.Employee;
+import day43_Abstraction.employeeTask.Person;
+import day43_Abstraction.employeeTask.Tester;
 import day45_Abstraction.shape.Circle;
 import day45_Abstraction.shape.Shape;
 import day45_Abstraction.shape.Square;
@@ -65,6 +67,14 @@ public class ReferenceTypeCasting {
         //Driver driver=(Driver) employee; //line1
         Person person=(Person) employee;//line2
         //Teacher teacher=(Teacher) employee; //line3
+
+        System.out.println("------------------------------------------------------------------------------");
+
+        Shape s1= new Circle("Circle", 10);
+        s1.area();
+        s1.perimeter();
+
+        //((Cube)s1).volume();
 
 
 
