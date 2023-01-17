@@ -13,6 +13,7 @@ public class ListIntro {
 
         List<Integer> list2= new LinkedList<>();
         list1.addAll(Arrays.asList(10, 20, 30, 40, 50, 60));
+
         System.out.println(list2.get(0));
 
         List<Integer> list3= new Vector<>();
