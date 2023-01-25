@@ -1,9 +1,6 @@
 package day50_Collections_Map;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class IterablePractice2 {
 
@@ -46,6 +43,26 @@ public class IterablePractice2 {
         names3.removeIf(each -> each.equalsIgnoreCase("ahmed"));
 
         System.out.println(names3);
+
+        System.out.println("-----------------------------------------------------------------------------");
+
+        Set<Integer> set= new HashSet<>(Arrays.asList(1,2,3,4,5,6,7,8,9,100,90,89,79,50));
+
+        Iterator<Integer> q= set.iterator();
+
+        while (q.hasNext()){
+            if(q.next() %2 == 0){
+                q.remove();
+            }
+        }
+        System.out.println(set);
+
+
+
+
+
+
+
 
     }
 }
