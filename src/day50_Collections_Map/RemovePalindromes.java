@@ -9,9 +9,7 @@ public class RemovePalindromes {
     public static void main(String[] args) {
 
         List<String> names = new ArrayList<>();
-        names.addAll(
-                Arrays.asList("Java", "Python", "Cydeo", "Car", "Level", "civic", "radar", "kayak", "reviver", "racecar", "madam")
-        );
+        names.addAll( Arrays.asList("Java", "Python", "Cydeo", "Car", "Level", "civic", "radar", "kayak", "reviver", "racecar", "madam"));
 
         Iterator<String> it = names.iterator();
 
