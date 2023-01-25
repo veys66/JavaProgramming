@@ -1,9 +1,6 @@
 package day50_Collections_Map;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class ListSetPractice {
 
@@ -16,7 +13,43 @@ public class ListSetPractice {
 
         //Integer[] array =set.toArray(new Integer[0]);
 
-        new ArrayList<>( set );
+        List<Integer> list = new ArrayList<>( set );
+
+        System.out.println(list);
+
+        List<String> name= null;
+
+        //System.out.println(names.size());
+
+        System.out.println("---------------------------------------------------------------------------------------");
+
+        //pop()
+
+        List<Character> chars = new Stack<>();
+        chars.addAll(Arrays.asList('A', 'B', 'C', 'D'));
+
+
+        ((Stack)chars).pop();
+
+        System.out.println("chars = " + chars);//[A, B, C]
+
+        //poll() ==> FIFO
+
+        List<String > names=new LinkedList<>();
+        names.addAll(Arrays.asList("James", "Jimmy", "Kathy", "Breanna", "Max"));
+
+        System.out.println(names);
+
+        ((LinkedList<String>) names).poll();
+
+        System.out.println(names);
+
+        ((LinkedList<String>) names).poll();
+
+        System.out.println(names);
+
+
+
 
 
 
