@@ -38,6 +38,14 @@ public class IterablePractice2 {
 
         System.out.println(names2);
 
+        System.out.println("-----------------------------------------------------------------");
+
+        List<String> names3= new ArrayList<>();
+        names3.addAll(Arrays.asList("Ahmed", "ahmed", "aHmEd", "John", "Ercon", "Daniel", "Mustafa", "Mohammed", "Ahmed", "ahmed", "Yuliia", "Chris"));
+
+        names3.removeIf(each -> each.equalsIgnoreCase("ahmed"));
+
+        System.out.println(names3);
 
     }
 }
