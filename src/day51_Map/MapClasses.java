@@ -13,6 +13,11 @@ public class MapClasses {
         hashMap.put(3, "Jack");
         hashMap.put(40, "Emma");
         hashMap.put(5, "Isabella");
+        hashMap.put(5, "Ahmet");
+        hashMap.put(6, "Ahmet");
+        hashMap.put(7, "Ahmet");
+        hashMap.put(8, "Ahmet");
+
 
         System.out.println("hashMap = " + hashMap);
 
