@@ -31,8 +31,6 @@ public class ListIntro {
         ((Stack) list4).pop();
 
         System.out.println(list4);
-
-
     }
 
     public synchronized void method1(){
